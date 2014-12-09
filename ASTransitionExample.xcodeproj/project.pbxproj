@@ -13,6 +13,9 @@
 		54CFAC501A34F342006B7F57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CFAC4F1A34F342006B7F57 /* Images.xcassets */; };
 		54CFAC531A34F342006B7F57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CFAC511A34F342006B7F57 /* LaunchScreen.xib */; };
 		54CFAC5F1A34F342006B7F57 /* ASTransitionExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFAC5E1A34F342006B7F57 /* ASTransitionExampleTests.swift */; };
+		54CFAC691A34F40A006B7F57 /* ASDropBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFAC681A34F40A006B7F57 /* ASDropBehavior.swift */; };
+		54CFAC6B1A34FE48006B7F57 /* ASDropTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFAC6A1A34FE48006B7F57 /* ASDropTransitionAnimator.swift */; };
+		54CFAC6D1A351024006B7F57 /* ASResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFAC6C1A351024006B7F57 /* ASResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		54CFAC581A34F342006B7F57 /* ASTransitionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASTransitionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CFAC5D1A34F342006B7F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54CFAC5E1A34F342006B7F57 /* ASTransitionExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTransitionExampleTests.swift; sourceTree = "<group>"; };
+		54CFAC681A34F40A006B7F57 /* ASDropBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASDropBehavior.swift; sourceTree = "<group>"; };
+		54CFAC6A1A34FE48006B7F57 /* ASDropTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASDropTransitionAnimator.swift; sourceTree = "<group>"; };
+		54CFAC6C1A351024006B7F57 /* ASResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,11 @@
 		54CFAC451A34F342006B7F57 /* ASTransitionExample */ = {
 			isa = PBXGroup;
 			children = (
+				54CFAC681A34F40A006B7F57 /* ASDropBehavior.swift */,
+				54CFAC6A1A34FE48006B7F57 /* ASDropTransitionAnimator.swift */,
 				54CFAC481A34F342006B7F57 /* AppDelegate.swift */,
 				54CFAC4A1A34F342006B7F57 /* ViewController.swift */,
+				54CFAC6C1A351024006B7F57 /* ASResultViewController.swift */,
 				54CFAC4C1A34F342006B7F57 /* Main.storyboard */,
 				54CFAC4F1A34F342006B7F57 /* Images.xcassets */,
 				54CFAC511A34F342006B7F57 /* LaunchScreen.xib */,
@@ -212,6 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54CFAC6B1A34FE48006B7F57 /* ASDropTransitionAnimator.swift in Sources */,
+				54CFAC6D1A351024006B7F57 /* ASResultViewController.swift in Sources */,
+				54CFAC691A34F40A006B7F57 /* ASDropBehavior.swift in Sources */,
 				54CFAC4B1A34F342006B7F57 /* ViewController.swift in Sources */,
 				54CFAC491A34F342006B7F57 /* AppDelegate.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let detailViewController: ASResultViewController = segue.destinationViewController as ASResultViewController
+        detailViewController.transitioningDelegate = self;
+        detailViewController.modalPresentationStyle = .Custom
+    }
 
+
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        var animator = ASDropTransitionAnimator()
+        animator.presenting = true
+        return animator;
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        var animator = ASDropTransitionAnimator()
+        animator.presenting = false
+        return animator;
+    }
 }
+
 
